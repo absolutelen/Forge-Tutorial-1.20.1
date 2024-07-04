@@ -6,6 +6,7 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.ron.tutorialmod.TutorialMod;
+import net.ron.tutorialmod.item.custom.MetalDetectoritem;
 
 public class ModItems {
     public static final DeferredRegister<Item> ITEMS =
@@ -17,6 +18,9 @@ public class ModItems {
             () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> ACORN = ITEMS.register("acorn",
             () -> new Item(new Item.Properties()));
+
+    public static  final RegistryObject<Item> METAL_DETECTOR = ITEMS.register("metal_detector",
+            () -> new MetalDetectoritem(new Item.Properties().durability(100)));
 
 
     public static void register(IEventBus eventBus) {
