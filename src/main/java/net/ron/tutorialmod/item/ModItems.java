@@ -18,6 +18,11 @@ public class ModItems {
             () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> ACORN = ITEMS.register("acorn",
             () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> CRACKED_DIAMOND_ACORN = ITEMS.register("cracked_diamond_acorn",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> DIAMOND_ACORN = ITEMS.register("diamond_acorn",
+            () -> new Item(new Item.Properties()));
+
 
     public static  final RegistryObject<Item> METAL_DETECTOR = ITEMS.register("metal_detector",
             () -> new MetalDetectoritem(new Item.Properties().durability(100)));
