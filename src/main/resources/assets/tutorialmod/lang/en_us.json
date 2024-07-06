@@ -16,6 +16,7 @@
   "block.tutorialmod.nether_sapphire_ore": "Nether Sapphire Ore",
 
   "item.tutorialmod.metal_detector": "metal_detector",
+  "tooltip.tutorialmod.metal_detector.tooltip": "the material finder",
 
   "creativetab.tutorial_tab": "Sapphire Tutorial Tab"
 }
