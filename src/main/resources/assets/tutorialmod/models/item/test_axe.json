@@ -1,0 +1,18 @@
+{
+  "parent": "minecraft:item/handheld",
+  "loader": "forge:separate_transforms",
+  "base": {
+    "parent": "tutorialmod:item/test_axe_3d"
+  },
+  "perspectives": {
+    "gui": {
+      "parent": "tutorialmod:item/cracked_diamond_acorn"
+    },
+    "ground": {
+      "parent": "tutorialmod:item/cracked_diamond_acorn"
+    },
+    "fixed": {
+      "parent": "tutorialmod:item/cracked_diamond_acorn"
+    }
+  }
+}

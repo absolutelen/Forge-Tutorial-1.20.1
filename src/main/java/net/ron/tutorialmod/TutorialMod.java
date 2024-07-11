@@ -15,6 +15,7 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.ron.tutorialmod.block.ModBlocks;
 import net.ron.tutorialmod.item.ModCreativeModTabs;
 import net.ron.tutorialmod.item.ModItems;
+import net.ron.tutorialmod.loot.ModLootModifiers;
 import org.slf4j.Logger;
 
 @Mod(TutorialMod.MOD_ID)
@@ -33,6 +34,8 @@ public class TutorialMod
 
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
+
+        ModLootModifiers.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 

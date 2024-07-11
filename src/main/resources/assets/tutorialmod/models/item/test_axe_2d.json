@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/handled",
+  "textures": {
+    "layer0": "tutorialmod:item/cracked_diamond_acorn"
+  }
+}

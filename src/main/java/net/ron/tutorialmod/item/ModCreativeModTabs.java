@@ -61,6 +61,7 @@ public class ModCreativeModTabs {
                         pOutput.accept(ModItems.SAPPHIRE_BOOTS.get());
 
                         pOutput.accept(ModItems.TEST_SWORD.get());
+                        pOutput.accept(ModItems.TEST_AXE.get());
 
                     })
                     .build());
