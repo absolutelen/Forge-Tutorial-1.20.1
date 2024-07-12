@@ -45,5 +45,7 @@
   "item.tutorialmod.metal_detector": "metal_detector",
   "tooltip.tutorialmod.metal_detector.tooltip": "the material finder",
 
+  "sounds.tutorialmod.metal_detector_found_ore": "metal_detector_found_ore",
+
   "creativetab.tutorial_tab": "Sapphire Tutorial Tab"
 }

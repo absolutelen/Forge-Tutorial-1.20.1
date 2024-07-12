@@ -31,7 +31,7 @@ public class ModEvents {
                     new ItemStack(ModItems.CRACKED_DIAMOND_ACORN.get(),2),
                     3,8,0.035f));
             trades.get(5).add((pTrader,pRandom)->new MerchantOffer(
-                    new ItemStack(Items.EMERALD,100),
+                    new ItemStack(Items.EMERALD,64),
                     new ItemStack(ModItems.DIAMOND_ACORN.get(),1),
                     2,8,0.2f));
 

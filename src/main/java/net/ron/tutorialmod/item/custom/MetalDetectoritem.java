@@ -4,6 +4,7 @@ import net.minecraft.client.resources.language.I18n;
 import net.minecraft.core.BlockPos;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.sounds.SoundSource;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.entity.player.Player;
@@ -17,6 +18,7 @@ import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockState;
 import net.ron.tutorialmod.TutorialMod;
 import net.ron.tutorialmod.item.ModItems;
+import net.ron.tutorialmod.sound.ModSounds;
 import net.ron.tutorialmod.util.ModTags;
 import org.jetbrains.annotations.Nullable;
 
@@ -40,6 +42,9 @@ public class MetalDetectoritem extends Item {
                 if(isValuableBlock(state )) {
                     outputValuableCoordinates(positionClicked.below(i),player,state.getBlock());
                     foundBlock=true;
+
+                    pContext.getLevel().playSeededSound(null,positionClicked.getX(),positionClicked.getY(),positionClicked.getZ(), ModSounds.METAL_DETECTOR_FOUND_ORE.get(), SoundSource.BLOCKS,1f,1f,0);
+
                     break;
                 }
 

@@ -16,6 +16,7 @@ import net.ron.tutorialmod.block.ModBlocks;
 import net.ron.tutorialmod.item.ModCreativeModTabs;
 import net.ron.tutorialmod.item.ModItems;
 import net.ron.tutorialmod.loot.ModLootModifiers;
+import net.ron.tutorialmod.sound.ModSounds;
 import org.slf4j.Logger;
 
 @Mod(TutorialMod.MOD_ID)
@@ -36,6 +37,8 @@ public class TutorialMod
         ModBlocks.register(modEventBus);
 
         ModLootModifiers.register(modEventBus);
+
+        ModSounds.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 
