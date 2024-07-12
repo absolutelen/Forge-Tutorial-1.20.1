@@ -47,6 +47,9 @@ public class ModItems {
             () -> new SwordItem(ModToolTiers.SAPPHIRE, 10, 2, new Item.Properties()));
     public static final RegistryObject<Item> TEST_AXE = ITEMS.register("test_axe",
             () -> new AxeItem(ModToolTiers.SAPPHIRE, 12, 1, new Item.Properties()));
+    public static final RegistryObject<Item> GUTS_GREAT_SWORD = ITEMS.register("guts_great_sword",
+            () -> new SwordItem(ModToolTiers.SAPPHIRE, 1000, 1, new Item.Properties()));
+
 
     public static final RegistryObject<Item> SAPPHIRE_HELMET = ITEMS.register("sapphire_helmet",
             () -> new ModArmorItem(ModArmorMaterials.SAPPHIRE,ArmorItem.Type.HELMET, new Item.Properties()));

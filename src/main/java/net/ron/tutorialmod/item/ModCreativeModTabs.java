@@ -62,6 +62,7 @@ public class ModCreativeModTabs {
 
                         pOutput.accept(ModItems.TEST_SWORD.get());
                         pOutput.accept(ModItems.TEST_AXE.get());
+                        pOutput.accept(ModItems.GUTS_GREAT_SWORD.get());
 
                     })
                     .build());
