@@ -1,12 +1,14 @@
 package net.ron.tutorialmod.item;
 
 import net.minecraft.world.item.*;
+import net.minecraftforge.common.ForgeSpawnEggItem;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.ron.tutorialmod.TutorialMod;
+import net.ron.tutorialmod.entity.ModEntities;
 import net.ron.tutorialmod.item.custom.MetalDetectoritem;
 import net.ron.tutorialmod.item.custom.ModArmorItem;
 
@@ -60,7 +62,9 @@ public class ModItems {
    public static final RegistryObject<Item> SAPPHIRE_BOOTS = ITEMS.register("sapphire_boots",
             () -> new ArmorItem(ModArmorMaterials.SAPPHIRE,ArmorItem.Type.BOOTS, new Item.Properties()));
 
-
+   public static final RegistryObject<Item> RHINO_SPAWN_EGG = ITEMS.register("rhino_spawm_egg",
+           ()->new ForgeSpawnEggItem(ModEntities.RHINO,0x7e9680, 0xc5d1c5,
+                   new Item.Properties()));
 
 
 

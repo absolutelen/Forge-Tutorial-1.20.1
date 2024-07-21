@@ -64,6 +64,10 @@ public class ModCreativeModTabs {
                         pOutput.accept(ModItems.TEST_AXE.get());
                         pOutput.accept(ModItems.GUTS_GREAT_SWORD.get());
 
+                        pOutput.accept(ModItems.RHINO_SPAWN_EGG.get());
+
+
+
                     })
                     .build());
 

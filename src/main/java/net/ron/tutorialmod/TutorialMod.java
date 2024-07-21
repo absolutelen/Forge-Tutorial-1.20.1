@@ -1,6 +1,7 @@
 package net.ron.tutorialmod;
 
 import com.mojang.logging.LogUtils;
+import net.minecraft.client.renderer.entity.EntityRenderers;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
@@ -13,6 +14,8 @@ import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.ron.tutorialmod.block.ModBlocks;
+import net.ron.tutorialmod.entity.ModEntities;
+import net.ron.tutorialmod.entity.client.RhinoRenderer;
 import net.ron.tutorialmod.item.ModCreativeModTabs;
 import net.ron.tutorialmod.item.ModItems;
 import net.ron.tutorialmod.loot.ModLootModifiers;
@@ -39,6 +42,7 @@ public class TutorialMod
         ModLootModifiers.register(modEventBus);
 
         ModSounds.register(modEventBus);
+        ModEntities.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 
@@ -73,7 +77,7 @@ public class TutorialMod
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event)
         {
-
+            EntityRenderers.register(ModEntities.RHINO.get(), RhinoRenderer::new);
         }
     }
 }
